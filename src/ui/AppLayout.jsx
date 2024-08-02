@@ -2,6 +2,7 @@ import Header from './Header';
 import Loader from './Loader';
 import CartOverview from '../features/cart/CartOverview';
 import { Outlet, useNavigation } from 'react-router-dom';
+import Footer from './Footer';
 
 function AppLayout() {
   const navigation = useNavigation();
@@ -20,6 +21,7 @@ function AppLayout() {
       </div>
 
       <CartOverview />
+      {/* <Footer /> */}
     </div>
   );
 }
